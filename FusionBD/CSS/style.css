@@ -1,0 +1,519 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-family: Audiowide, Arial, sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  padding: 2px 0;
+}
+
+b {
+  font-weight: bold;
+}
+
+hr {
+  background-color: #ccc;
+  border: medium none;
+  height: 1px;
+  margin: 2px 0;
+  padding: 0;
+}
+
+table {
+  width: 100%;
+  margin: auto;
+}
+
+img {
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a img,
+:link img,
+:visited img {
+  border: none;
+}
+
+#mainDiv {
+}
+
+#block {
+  display: flex;
+  justify-content: center;
+}
+
+.clr {
+  clear: both;
+}
+
+.devider {
+  height: 5px;
+}
+
+h1, h2, h3 {
+  color: #fff;
+  background: #3CB371;
+  font-size: 130%;
+  font-weight: normal;
+  text-align: center;
+  padding: 5px;
+  margin: 0;
+  text-shadow: 1px 1px 3px #555;
+  background: -moz-linear-gradient(top, #3CB371 0%, #4A9586 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3CB371), color-stop(100%, #4A9586));
+  background: -webkit-linear-gradient(top, #3CB371 0%, #4A9586 100%);
+}
+
+h2 a {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.randomFile h3 {
+  text-align: left;
+}
+
+.search {
+  background: #EDECEA;
+  border: 1px solid #D7CCC5;
+  padding: 5px;
+  text-align: left;
+}
+
+.search_input,
+.search_submit {
+  font-size: 14px;
+  color: #666;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.search_input {
+  width: 200px;
+  margin: 8px 0 0 10px;
+  padding: 6px;
+}
+
+.search_submit {
+  width: 65px;
+  margin: 8px 0 8px 5px;
+  padding: 6px 0 6px 0;
+  cursor: pointer;
+}
+
+.catRowHome,
+.catRow {
+  border-bottom: 1px solid #ccc;
+  background: #FDFDFD;
+  background: -moz-linear-gradient(top, #FDFDFD 0%, #EEEEEE 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FDFDFD), color-stop(100%, #EEEEEE));
+  background: -webkit-linear-gradient(top, #FDFDFD 0%, #EEEEEE 100%);
+}
+
+.catRow:hover,
+.catRowHome:hover {
+  background: #EDEDED;
+  background: -moz-linear-gradient(top, #EDEDED 0%, #DADADA 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #EDEDED), color-stop(100%, #DADADA));
+  background: -webkit-linear-gradient(top, #EDEDED 0%, #DADADA 100%);
+}
+
+.catRow a,
+.catRowHome a {
+  display: block;
+  font-weight: bold;
+  background: url(http://fpages.fusionbd.com/arrow.png) right center no-repeat;
+  padding: 9px;
+}
+
+.catRow div {
+  display: table-cell;
+}
+
+.catRow div img {
+  padding-right: 5px;
+}
+
+.catRow a div span,
+.catRowHome a div span {
+  font-size: x-small;
+  color: #5a5;
+  font-weight: normal;
+}
+
+.fl {
+  border-bottom: 1px solid #ccc;
+  background: #FDFDFD;
+  background: -moz-linear-gradient(top, #FDFDFD 0%, #EEEEEE 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FDFDFD), color-stop(100%, #EEEEEE));
+  background: -webkit-linear-gradient(top, #FDFDFD 0%, #EEEEEE 100%);
+}
+
+.fl:hover {
+  background: #EDEDED;
+  background: -moz-linear-gradient(top, #EDEDED 0%, #DADADA 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #EDEDED), color-stop(100%, #DADADA));
+  background: -webkit-linear-gradient(top, #EDEDED 0%, #DADADA 100%);
+}
+
+.fl:focus {
+  background: #EDEDED;
+  background: -moz-linear-gradient(top, #fbb757 0%, #ea8615 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fbb757), color-stop(100%, #ea8615));
+  background: -webkit-linear-gradient(top, #fbb757 0%, #ea8615 100%);
+}
+
+.fl td {
+  padding: 7px 2px;
+  border-bottom: 1px solid #ccc;
+}
+
+.fl a {
+  display: block;
+  padding: 8px;
+  vertical-align: middle;
+}
+
+.fl img {
+  border: 1px solid #bbb;
+  padding: 1px;
+}
+
+.fl a img {
+  margin-right: 3px;
+  border: none;
+  border-radius: 10px;
+}
+
+.fl div {
+  display: table-cell;
+}
+
+.fl a div div {
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.fl span {
+  color: #CD3508;
+  font-weight: normal;
+}
+
+.fileName {
+  font-weight: bold;
+}
+
+.fileName span {
+  color: #555;
+  text-decoration: none;
+}
+
+.fileName img {
+  padding-right: 3px;
+}
+
+.link1 {
+  background: #4a9586;
+  color: #ffffff;
+  padding: 2px 5px;
+  border: 1px solid #ccc;
+  margin: 0 1px;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 30px;
+}
+
+.link1:hover {
+  background: #328bc2;
+  text-decoration: none;
+}
+
+.button {
+  color: #086C8F;
+  font-weight: bold;
+}
+
+.downloadButton {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #4a9586;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: none;
+}
+
+.downloadButton:hover {
+  background: #328bc2;
+  text-decoration: none;
+}
+
+.downLink {
+  margin: 1px 0;
+}
+
+.dwnLink {
+  font-weight: bold;
+}
+
+.tCenter {
+  text-align: center;
+}
+
+.logo {
+  background: url(http://master-bd.xtgem.com/projects/bg.png) repeat-x #fff;
+  text-align: center;
+}
+
+.f1 {
+  background: #515151;
+  color: #fff;
+  font-size: 120%;
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.f1 a {
+  color: #fff;
+}
+
+.hd {
+  background: #eee;
+  color: #0E71C6;
+  font-size: small;
+  font-weight: bolder;
+  line-height: 20px;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.absmiddle {
+  vertical-align: middle;
+  border: none;
+  border-radius: 10px;
+}
+
+.ct {
+  margin-right: 3px;
+  vertical-align: middle;
+  padding: 1px;
+  border: 1px solid #999;
+}
+
+.odd, .even, .sl {
+  vertical-align: middle;
+}
+
+.odd {
+  background: #f5f5fa;
+}
+
+.even {
+  background: #fff;
+}
+
+.description {
+  background: #f5f5f5;
+  color: #222;
+  padding: 5px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.description a {
+  text-decoration: none;
+}
+
+.filedescription {
+  background: #f5f5f5;
+  padding: 5px 0;
+  text-align: center;
+}
+
+.tblimg {
+  width: 65px;
+  text-align: center;
+}
+
+.red {
+  color: red;
+}
+
+.info {
+  color: red;
+  background: #fff;
+  text-align: center;
+  padding: 2px;
+}
+.dtype {
+  font-size: 100%;
+  padding: 5px;
+  text-align: center;
+}
+
+.showimage {
+  padding: 5px;
+  text-align: center;
+}
+
+a.top {
+  color: #FF7F00;
+  text-decoration: none;
+}
+
+.path {
+  padding: 2px;
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.path2 {
+  padding: 5px;
+  margin: 5px 0;
+  font-weight: normal;
+}
+
+.error {
+  background: #FFEFEF;
+  border: 1px solid #f00;
+  margin: 5px;
+  padding: 5px;
+  font-weight: bold;
+  text-align: center;
+  color: #f00;
+}
+
+.fshow {
+  padding: 3px;
+  text-align: center;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.thumbimg {
+  vertical-align: middle;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.db {
+  font-size: small;
+  text-align: center;
+  padding: 5px;
+}
+
+.ad1 {
+  background: #EDECEA;
+  border: 1px solid #D7CCC5;
+  padding: 8px;
+  text-align: center;
+}
+
+.ad5 {
+  background: #EEEEEE;
+  border: 1px solid #DDDDDD;
+  padding: 2px;
+  text-align: center;
+}
+
+.fb {
+  font-weight: bold;
+}
+
+.duration {
+  position: relative;
+  background-color: #ababab;
+  font-size: 70%;
+  font-weight: bold;
+  border-radius: .25em;
+  padding: 2px;
+}
+
+.pgn {
+  background: #EDECEA;
+  border: 1px solid #D7CCC5;
+  padding: 5px 0;
+  text-align: center;
+  font-size: 18px;
+}
+
+.pgn form {
+  padding-top: 5px;
+}
+
+.pgn a,
+.pgn span {
+  padding: 2px 5px;
+  margin: 0 1px;
+  font-weight: bold;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  font-size: 18px;
+}
+
+.pgn a {
+  border: 1px solid #ccc;
+  background: #f5f5f5;
+}
+
+.pgn div {
+  padding-top: 5px;
+}
+
+.pgn span,
+.pgn a:hover {
+  border: 1px solid #ccc;
+  background: #ddd;
+  color: #777;
+}
+
+.updates div {
+  background: #FDFDFD;
+  background: -moz-linear-gradient(top, #FDFDFD 0%, #EEEEEE 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FDFDFD), color-stop(100%, #EEEEEE));
+  background: -webkit-linear-gradient(top, #FDFDFD 0%, #EEEEEE 100%);
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+
+.ftrLink {
+  background: #666666;
+  background: -moz-linear-gradient(top, #000000 0%, #666666 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000000), color-stop(100%, #666666));
+  background: -webkit-linear-gradient(top, #000000 0%, #666666 100%);
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px #555;
+}
+
+.ftrLink a {
+  color: #fff;
+}
+
+
+
