@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
 body {
   margin: 0;
   padding: 0;
   color: #000;
-  font-family: Audiowide, Arial, sans-serif;
+  font-family: Rajdhani, Arial, sans-serif;
+  font-size: 16px;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -47,9 +51,8 @@ a img,
 :link img,
 :visited img {
   border: none;
-}
-
-#mainDiv {
+}#mainDiv { 
+  font-size: 100%;
 }
 
 #block {
@@ -64,11 +67,10 @@ a img,
 .devider {
   height: 5px;
 }
-
 h1, h2, h3 {
   color: #fff;
   background: #3CB371;
-  font-size: 130%;
+  font-size: 100%;
   font-weight: normal;
   text-align: center;
   padding: 5px;
@@ -78,9 +80,8 @@ h1, h2, h3 {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3CB371), color-stop(100%, #4A9586));
   background: -webkit-linear-gradient(top, #3CB371 0%, #4A9586 100%);
 }
-
 h2 a {
-  font-size: 18px;
+  font-size: 16px;
   color: #ffffff;
 }
 
@@ -94,16 +95,14 @@ h2 a {
   padding: 5px;
   text-align: left;
 }
-
 .search_input,
 .search_submit {
-  font-size: 14px;
+  font-size: 15px;
   color: #666;
   font-weight: bold;
   border-radius: 5px;
   border: 1px solid #ccc;
 }
-
 .search_input {
   width: 200px;
   margin: 8px 0 0 10px;
@@ -133,12 +132,11 @@ h2 a {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #EDEDED), color-stop(100%, #DADADA));
   background: -webkit-linear-gradient(top, #EDEDED 0%, #DADADA 100%);
 }
-
 .catRow a,
 .catRowHome a {
   display: block;
   font-weight: bold;
-  background: url(http://fpages.fusionbd.com/arrow.png) right center no-repeat;
+  background: url(url(https://cdn.jsdelivr.net/gh/nayeemhossainbd/Wapkiz-Projects@main/FusionBD/IMAGES/arrow.png) right center no-repeat;
   padding: 9px;
 }
 
@@ -248,12 +246,10 @@ h2 a {
   color: #086C8F;
   font-weight: bold;
 }
-
 .downloadButton {
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
   border-radius: 28px;
-  font-family: Arial;
   color: #ffffff;
   font-size: 20px;
   background: #4a9586;
@@ -278,16 +274,14 @@ h2 a {
 .tCenter {
   text-align: center;
 }
-
 .logo {
-  background: url(http://master-bd.xtgem.com/projects/bg.png) repeat-x #fff;
+  background: url(https://cdn.jsdelivr.net/gh/nayeemhossainbd/Wapkiz-Projects@main/FusionBD/IMAGES/bg.png) repeat-x #fff;
   text-align: center;
 }
-
 .f1 {
   background: #515151;
   color: #fff;
-  font-size: 120%;
+  font-size: 100%;
   padding: 5px;
   text-align: center;
   font-weight: bold;
@@ -442,36 +436,31 @@ a.top {
 .fb {
   font-weight: bold;
 }
-
 .duration {
   position: relative;
   background-color: #ababab;
-  font-size: 70%;
+  font-size: 80%;
   font-weight: bold;
   border-radius: .25em;
   padding: 2px;
-}
-
-.pgn {
+}.pgn {
   background: #EDECEA;
   border: 1px solid #D7CCC5;
   padding: 5px 0;
   text-align: center;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .pgn form {
   padding-top: 5px;
-}
-
-.pgn a,
+}.pgn a,
 .pgn span {
   padding: 2px 5px;
   margin: 0 1px;
   font-weight: bold;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .pgn a {
@@ -514,6 +503,3 @@ a.top {
 .ftrLink a {
   color: #fff;
 }
-
-
-
