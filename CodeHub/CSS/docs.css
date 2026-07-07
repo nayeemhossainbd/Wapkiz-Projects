@@ -21,6 +21,14 @@
     text-decoration: underline;
 }
 
+.doc img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 6px;
+}
+
 .doc del,
 .doc s {
     color: #cf222e;
