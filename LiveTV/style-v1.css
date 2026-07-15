@@ -269,6 +269,7 @@ transform: scale(1.06);
 
 .channel-card img {
 width: 100%;
+max-width: 120px;
 height: 160px;
 object-fit: cover;
 display: block;
