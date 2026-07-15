@@ -247,7 +247,7 @@ body {
 }
 
 .channel-card {
-  min-width: 220px;
+  min-width: 120px;
   background: #222;
   border-radius: 10px;
   overflow: hidden;
@@ -264,7 +264,7 @@ body {
 }
 
 .channel-card img {
-  width: 220px;
+  width: 120px;
   max-width: 100%;
   height: 130px;
   object-fit: cover;
