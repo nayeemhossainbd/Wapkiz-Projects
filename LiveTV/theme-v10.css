@@ -682,7 +682,7 @@ body {
 
 /* RESPONSIVE MEDIA QUERIES */
 @media (max-width: 768px) {
-  .logo { font-size: 20px; }
+  .logo { font-size: 28px; }
   .search-box { max-width: 180px; }
   .search-box input { height: 36px; font-size: 13px; }
   .hero { height: 45vh; }
