@@ -184,7 +184,7 @@ body {
 
 /* Hero */
 .hero {
-  height: 60vh;
+  height: 45vh;
   background: url("https://cdn.jsdelivr.net/gh/nayeemhossainbd/Wapkiz-Projects@main/LiveTV/IMG/fifa-world-cup-2026.png");
   background-size: cover;
   background-position: center;
@@ -326,7 +326,7 @@ body {
 }
 
 .channel-info h1 {
-  font-size: 28px;
+  font-size: 18px;
   font-weight: 700;
   margin-bottom: 5px;
   color: #fff;
@@ -412,7 +412,7 @@ body {
 }
 
 .search-title {
-  font-size: 28px;
+  font-size: 18px;
   font-weight: 700;
   margin-bottom: 5px;
   color: #fff;
@@ -487,7 +487,7 @@ body {
 }
 
 .category-banner h1 {
-  font-size: 32px;
+  font-size: 18px;
   font-weight: 700;
   margin-bottom: 8px;
 }
@@ -616,7 +616,7 @@ body {
 }
 
 .favorites-title {
-  font-size: 28px;
+  font-size: 18px;
   font-weight: 700;
   margin-bottom: 20px;
   color: #fff;
@@ -691,9 +691,9 @@ body {
   .channel-card { min-width: 160px; }
   .channel-card img { height: 100px; }
   .player-container { padding: 10px; }
-  .channel-info h1 { font-size: 22px; }
+  .channel-info h1 { font-size: 18px; }
   .player-actions { overflow-x: auto; }
-  .search-title { font-size: 22px; }
+  .search-title { font-size: 18px; }
   .search-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
   .search-card img { height: 100px; }
   .search-name { font-size: 13px; padding: 8px; }
