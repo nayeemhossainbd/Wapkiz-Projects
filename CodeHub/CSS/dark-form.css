@@ -1,0 +1,85 @@
+.blog-form {
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 18px;
+}
+
+.blog-form p {
+    margin: 0 0 16px;
+}
+
+.blog-form b {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #f0f6fc;
+}
+
+.blog-form input[type="text"],
+.blog-form textarea,
+.blog-form select {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 14px;
+    color: #f0f6fc;
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color .2s ease, box-shadow .2s ease, background-color .2s ease;
+}
+
+.blog-form input::placeholder,
+.blog-form textarea::placeholder {
+    color: #8b949e;
+}
+
+.blog-form textarea {
+    min-height: 180px;
+    resize: vertical;
+}
+
+.blog-form input:focus,
+.blog-form textarea:focus,
+.blog-form select:focus {
+    background: #0d1117;
+    border-color: #2f81f7;
+    box-shadow: 0 0 0 3px rgba(47, 129, 247, .2);
+}
+
+.blog-form input[type="submit"],
+.blog-form button {
+    width: 100%;
+    padding: 12px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    background: #238636;
+    border: 0;
+    border-radius: 8px;
+    transition: background .2s ease;
+}
+
+.blog-form input[type="submit"]:hover,
+.blog-form button:hover {
+    background: #2ea043;
+}
+
+.blog-form small {
+    display: block;
+    margin-top: 6px;
+    font-size: 12px;
+    color: #8b949e;
+}
+
+.blog-form .notify {
+    margin-bottom: 16px;
+    padding: 12px;
+    color: #f0f6fc;
+    background: #161b22;
+    border-left: 4px solid #2f81f7;
+    border-radius: 8px;
+}
