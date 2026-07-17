@@ -1,4 +1,4 @@
-.doc,
+/* --- File 1: Main --- */
 .doc p {
     color: #fff;
 }
@@ -90,4 +90,27 @@
 
 .doc table tbody tr:nth-child(2n) {
     background-color: #161b22;
+}
+
+/* --- File 2: Layout --- */
+.doc img { 
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 5px; 
+} 
+
+.doc pre { 
+    white-space: pre-wrap; 
+    overflow-wrap: break-word; 
+    word-break: break-word; 
+} 
+
+.doc pre code { 
+    white-space: inherit; 
+    overflow-wrap: inherit; 
+    word-break: inherit; 
+}
+
+.doc table { 
+    max-width: 100%; 
 }
