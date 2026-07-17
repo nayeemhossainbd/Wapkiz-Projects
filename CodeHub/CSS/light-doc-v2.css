@@ -1,3 +1,4 @@
+/* --- Light Version --- */
 .doc,
 .doc p {
     color: #24292f;
@@ -90,4 +91,23 @@
 
 .doc table tbody tr:nth-child(2n) {
     background-color: #f6f8fa;
+}
+
+/* --- Layout Styles --- */
+.doc img { 
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 5px; 
+} 
+
+.doc pre { 
+    white-space: pre-wrap; 
+    overflow-wrap: break-word; 
+    word-break: break-word; 
+} 
+
+.doc pre code { 
+    white-space: inherit; 
+    overflow-wrap: inherit; 
+    word-break: inherit; 
 }
