@@ -716,7 +716,7 @@ body {
   .hero-content h1 { font-size: 28px; }
   .hero-content p { font-size: 12px; }
   .channel-card { min-width: 160px; }
-  .channel-card img { height: 160px; }
+  .channel-card img { height: 100px; }
   .player-container { padding: 10px; }
   .channel-info h1 { font-size: 18px; }
   .player-actions { overflow-x: auto; }
@@ -731,6 +731,6 @@ body {
   .category-name { font-size: 13px; padding: 8px; }
   .page-btn { min-width: 36px; height: 36px; font-size: 14px; }
   .favorites-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
-  .favorite-card img { height: 140px; }
+  .favorite-card img { height: 100px; }
   .favorite-name { font-size: 13px; }
 }
