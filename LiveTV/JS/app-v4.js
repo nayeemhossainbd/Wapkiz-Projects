@@ -5,11 +5,9 @@ let channels = [];
 document.addEventListener("DOMContentLoaded", async function () {
   try {
     channels = await loadPlaylist(PLAYLIST_URL);
-
     renderChannels(channels);
     setupSearch();
     setupCategories();
-
   } catch (error) {
     console.error("Playlist error:", error);
   }
@@ -22,7 +20,7 @@ function renderChannels(list) {
 
   container.innerHTML = list.map(channel => `
     <button class="list-group-item list-group-item-action d-flex align-items-center channel-item" data-url="${channel.url}">
-      <img src="${channel.logo || ""}" class="rounded me-3" width="45" height="45" loading="lazy">
+      ${channel.logo ? `<img src="${channel.logo}" class="rounded me-3" width="45" height="45" loading="lazy">` : `<span class="me-3 fs-4"><i class="fa-solid fa-tv"></i></span>`}
       <div>
         <div class="fw-semibold">${channel.name}</div>
         <small class="text-secondary">${channel.group}</small>
@@ -63,10 +61,7 @@ function setupCategories() {
 
   if (!bar) return;
 
-  const groups = [
-    "All",
-    ...new Set(channels.map(channel => channel.group))
-  ];
+  const groups = ["All", ...new Set(channels.map(channel => channel.group))];
 
   bar.innerHTML = groups.map(group => `
     <button class="btn btn-primary btn-sm category-btn" data-group="${group}">
