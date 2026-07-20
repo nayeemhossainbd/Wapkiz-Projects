@@ -1,13 +1,8 @@
 class IPTVPlayer {
-  constructor(videoId = "player") {
-    this.video = document.getElementById(videoId);
+  constructor(id = "player") {
+    this.video = document.getElementById(id);
     this.hls = null;
-    this.player = null;
-    this.channel = null;
-    this.init();
-  }
 
-  init() {
     this.player = new Plyr(this.video, {
       controls: [
         "play-large",
@@ -35,20 +30,13 @@ class IPTVPlayer {
   load(channel) {
     if (!channel || !channel.url) return;
 
-    this.channel = channel;
-
     if (this.hls) {
       this.hls.destroy();
       this.hls = null;
     }
 
-    this.video.removeAttribute("src");
-    this.video.load();
-
     if (Hls.isSupported()) {
-      this.hls = new Hls({
-        enableWorker: true
-      });
+      this.hls = new Hls();
 
       this.hls.loadSource(channel.url);
       this.hls.attachMedia(this.video);
@@ -58,47 +46,32 @@ class IPTVPlayer {
         this.player.play().catch(() => {});
       });
 
-    } else if (this.video.canPlayType("application/vnd.apple.mpegurl")) {
+    } else {
       this.video.src = channel.url;
       this.player.play().catch(() => {});
     }
   }
 
   setQuality() {
-    if (!this.hls) return;
-
-    const levels = this.hls.levels;
-
-    const qualities = levels
-      .map(level => level.height)
-      .filter((v, i, a) => a.indexOf(v) === i)
-      .sort((a, b) => b - a);
+    let levels = this.hls.levels;
+    let quality = levels.map(x => x.height);
 
     this.player.options.quality = {
       default: "auto",
-      options: ["auto", ...qualities],
+      options: ["auto", ...quality],
       forced: true,
-      onChange: quality => {
-        if (quality === "auto") {
-          this.hls.currentLevel = -1;
-        } else {
-          this.hls.currentLevel = levels.findIndex(
-            level => level.height === quality
-          );
-        }
+      onChange: q => {
+        this.hls.currentLevel =
+          q === "auto"
+            ? -1
+            : levels.findIndex(x => x.height === q);
       }
     };
   }
 
   stop() {
-    if (this.hls) {
-      this.hls.destroy();
-      this.hls = null;
-    }
-
+    if (this.hls) this.hls.destroy();
     this.video.pause();
-    this.video.removeAttribute("src");
-    this.video.load();
   }
 }
 
