@@ -1,4 +1,4 @@
-const PLAYLIST_URL = "https://cdn.jsdelivr.net/gh/nayeemhossainbd/Wapkiz-Projects@main/LiveTV/LIST/ad.m3u8";
+const PLAYLIST_URL = "https://cdn.jsdelivr.net/gh/nayeemhossainbd/Wapkiz-Projects@main/LiveTV/LIST/play.m3u8";
 
 let channels = [];
 
