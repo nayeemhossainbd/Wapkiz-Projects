@@ -30,13 +30,20 @@ class IPTVPlayer {
   load(channel) {
     if (!channel || !channel.url) return;
 
+    console.log("Playing:", channel.url);
+
     if (this.hls) {
       this.hls.destroy();
       this.hls = null;
     }
 
+    this.video.removeAttribute("src");
+    this.video.load();
+
     if (Hls.isSupported()) {
-      this.hls = new Hls();
+      this.hls = new Hls({
+        enableWorker: true
+      });
 
       this.hls.loadSource(channel.url);
       this.hls.attachMedia(this.video);
@@ -46,33 +53,46 @@ class IPTVPlayer {
         this.player.play().catch(() => {});
       });
 
-    } else {
+    } else if (this.video.canPlayType("application/vnd.apple.mpegurl")) {
       this.video.src = channel.url;
       this.player.play().catch(() => {});
     }
   }
 
   setQuality() {
+    if (!this.hls) return;
+
     let levels = this.hls.levels;
-    let quality = levels.map(x => x.height);
+
+    let qualities = levels
+      .map(level => level.height)
+      .filter((v, i, a) => a.indexOf(v) === i);
 
     this.player.options.quality = {
       default: "auto",
-      options: ["auto", ...quality],
+      options: ["auto", ...qualities],
       forced: true,
-      onChange: q => {
+      onChange: quality => {
         this.hls.currentLevel =
-          q === "auto"
+          quality === "auto"
             ? -1
-            : levels.findIndex(x => x.height === q);
+            : levels.findIndex(
+                level => level.height === quality
+              );
       }
     };
   }
 
   stop() {
-    if (this.hls) this.hls.destroy();
+    if (this.hls) {
+      this.hls.destroy();
+      this.hls = null;
+    }
+
     this.video.pause();
+    this.video.removeAttribute("src");
+    this.video.load();
   }
 }
 
-window.player = new IPTVPlayer("player");
+const player = new IPTVPlayer("player");
