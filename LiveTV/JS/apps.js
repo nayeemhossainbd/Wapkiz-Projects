@@ -1,5 +1,4 @@
-const PLAYLIST_URL = "https://raw.githubusercontent.com/nayeemhossainbd/Wapkiz-Projects/refs/heads/main/LiveTV/LIST/a.m3u8";
-
+const PLAYLIST_URL = "https://cdn.jsdelivr.net/gh/nayeemhossainbd/Wapkiz-Projects@main/LiveTV/LIST/ad.m3u8";
 document.addEventListener("DOMContentLoaded", async () => {
   try {
     const parser = new M3UParser(PLAYLIST_URL);
