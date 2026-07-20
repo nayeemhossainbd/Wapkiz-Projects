@@ -83,6 +83,7 @@ class IPTVPlayer {
     }
 
     this.channel = channel;
+    console.log(channel.url);
 
     if (typeof Storage !== "undefined") {
       Storage.saveLastChannel(channel);
