@@ -27,48 +27,22 @@ class IPTVPlayer {
       ],
       speed: {
         selected: 1,
-        options: [
-          0.5,
-          0.75,
-          1,
-          1.25,
-          1.5,
-          2
-        ]
-      },
-      quality: {
-        default: "auto",
-        options: [
-          "auto"
-        ],
-        forced: true,
-        onChange: quality => {
-          if (!this.hls) return;
-
-          if (quality === "auto") {
-            this.hls.currentLevel = -1;
-          } else {
-            this.hls.currentLevel = this.hls.levels.findIndex(
-              level => level.height === quality
-            );
-          }
-        }
+        options: [0.5, 0.75, 1, 1.25, 1.5, 2]
       }
     });
   }
 
-  load(url) {
-    if (!url) return;
+  load(channel) {
+    if (!channel || !channel.url) return;
 
     this.destroyHls();
 
     if (Hls.isSupported()) {
       this.hls = new Hls({
-        enableWorker: true,
-        lowLatencyMode: true
+        enableWorker: true
       });
 
-      this.hls.loadSource(url);
+      this.hls.loadSource(channel.url);
       this.hls.attachMedia(this.video);
 
       this.hls.on(Hls.Events.MANIFEST_PARSED, () => {
@@ -77,7 +51,7 @@ class IPTVPlayer {
       });
 
     } else if (this.video.canPlayType("application/vnd.apple.mpegurl")) {
-      this.video.src = url;
+      this.video.src = channel.url;
       this.player.play();
     }
   }
@@ -87,25 +61,20 @@ class IPTVPlayer {
 
     const qualities = this.hls.levels
       .map(level => level.height)
-      .filter((value, index, array) => array.indexOf(value) === index)
-      .sort((a, b) => b - a);
+      .filter((v, i, a) => a.indexOf(v) === i);
 
     this.player.options.quality = {
       default: "auto",
-      options: [
-        "auto",
-        ...qualities
-      ],
+      options: ["auto", ...qualities],
       forced: true,
       onChange: quality => {
         if (quality === "auto") {
           this.hls.currentLevel = -1;
-          return;
+        } else {
+          this.hls.currentLevel = this.hls.levels.findIndex(
+            level => level.height === quality
+          );
         }
-
-        this.hls.currentLevel = this.hls.levels.findIndex(
-          level => level.height === quality
-        );
       }
     };
   }
@@ -115,14 +84,6 @@ class IPTVPlayer {
       this.hls.destroy();
       this.hls = null;
     }
-  }
-
-  play() {
-    return this.player.play();
-  }
-
-  pause() {
-    this.player.pause();
   }
 }
 
