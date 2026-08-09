@@ -1,0 +1,357 @@
+/*Created By Mehedi Hasan - Free to use for personal or Commercial Uses | Licensed Under bla bla bla */
+/*Main Index Values*/
+body{ background: url(http://soundsip.com/css/defk.png) repeat bottom fixed;
+font-family: "Lucida Bright", Georgia, serif;font-size: inherit; color: #000000;background-color: #FFFFFF; margin:0 auto;  max-width: px;  
+}
+a{
+padding:2px;
+}
+a:visited,a:link {
+color: #e64545;text-decoration:none;
+}
+a:hover,a:active{
+color:#fff;background: #bf3d3d;
+}
+::selection
+{
+background-color: #bf3d3d;
+color:#fff;
+}
+.link, .linkdesc { margin: 0px; padding: 2px; border-bottom: 0px dotted #606; background: #F4F4F4; }
+.link:nth-of-type(even) { margin: 0px; padding: 2px; border-bottom: 0px dotted #606; background: #fff; }
+.linkdesc{-webkit-border-radius: 4px;-border-radius: 4px; border-color: #6d7482; border-style: solid;border-width: 1px; margin-top: 2px;margin-bottom: 2px;}
+::-moz-selection
+{background-color: #bf3d3d;
+color:#fff;
+}
+img{
+border:0;margin:0;padding:0;vertical-align:middle;
+}
+p{
+margin: 0px; padding: 0px;
+}
+div{
+text-decoration: none;
+}
+img{max-width: 100%;}
+
+/*WebKit Menu Values*/
+.kdv {padding: px; border-left: 5px solid #ff5b5b; font-weight: bold;}
+.kdv1 {padding: px; border-left: 5px solid #af898a; font-weight: bold;}
+.kdv1 a {color: #db4f4f;}
+.kdv1 a:hover {color: #ffffff;}
+.sep {border-top: 2px solid #ededed;}
+
+.menu{
+background:#db4f4f; text-align:center;font-size: px;font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;color:#fff; font-weight: bold; padding: 2px;
+-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;background:rgba(219, 79, 79, 0.9);
+-webkit-box-shadow: #B3B3B3 5px 5px 5px;-moz-box-shadow: #B3B3B3 5px 5px 5px; box-shadow: #B3B3B3 5px 5px 5px;
+margin-left: 3px; margin-right: 3px;
+}
+
+/*Decent Item Values*/
+
+.komm1 {
+ background: #EDCECE;
+ -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; padding-bottom: 3px;
+}
+
+.bluepcp{
+padding:3px; border-bottom:0px dashed #9e4f4f; font-weight: bold;
+}.bluepcp:before{
+content:url('http://soundsip.com/css/cream_tile.png'); padding: 3px; vertical-align: middle;
+} 
+.bluepcp a{
+border: 0px dotted #fff;
+padding: 0px
+}
+.bluepcp:nth-of-type(even) {padding:3px; border-bottom:0px dashed #9e4f4f; background-color: #F4F4F4; }
+
+
+.bluep{border-radius: 4px 4px 4px 4px;
+-moz-border-radius: 4px 4px 4px 4px;
+-webkit-border-radius: 4px 4px 4px 4px;
+border: 1px solid #ad1010; color: #520a0a; max-width: 128px; font-size: small; padding: 3px; margin-top: 3px; margin-left: 3px; margin-right: 3px;}
+.pager{-webkit-box-shadow: -1px 3px 5px 0px rgba(189,87,92,1);
+-moz-box-shadow: -1px 3px 5px 0px rgba(189,87,92,1);
+box-shadow: -1px 3px 5px 0px rgba(189,87,92,1););
+background:url(http://soundsip.com/css/ws_pager.png) repeat; border-radius: 4px 4px 4px 4px;
+-moz-border-radius: 4px 4px 4px 4px;
+-webkit-border-radius: 4px 4px 4px 4px;
+font-weight: bold; color: #000000; padding: 8px; margin-top: 8px;
+margin-left: 3px; margin-right: 3px;
+}
+
+.tags:before{content:'Tags: '; font-weight: bold;}
+.tags{background: #f0b4b4; padding: 6px; Font-weight: small; border-radius: 4px 4px 4px 4px;
+-moz-border-radius: 4px 4px 4px 4px;
+-webkit-border-radius: 4px 4px 4px 4px; color: #cc3333; text-align: center; margin-left: 3px; margin-right: 3px;}
+
+
+/*Input Boxes Textareas*/
+input{
+-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;
+}
+textarea{
+width: 81%;  -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;
+}
+input[type='text'],input[type='password'] {
+width: 81%; -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;
+}
+select{
+height: 45%;width: 71%; -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;
+}
+input[type="file"]{
+Width: 120px; -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;
+}
+form > fieldset {
+border : 1px solid #fa5a5a;
+}
+input.button{
+text-decoration : none;
+color : #e63c3c;
+background-color : #fad2d2;
+border-top : 1px solid #fa5a5a;
+border-left : 1px solid #fa5a5a;
+border-right : 1px solid #fa5a5a;
+border-bottom : 1px solid #fa5a5a;
+padding : 0 1px 0 1px;
+}
+input,textarea,select{
+margin : 2px;
+font-family : Verdana, arial;
+font-size : inherit;
+background-color : #fad2d2;
+color: #e63c3c;
+border-top : 1px solid #fa5a5a;
+border-left : 1px solid #fa5a5a;
+border-right : 1px solid #fa5a5a;
+border-bottom : 1px solid #fa5a5a;
+}
+input:hover, input:focus{  -moz-box-shadow: 0 0 10px #eb4444;
+-webkit-box-shadow: 0 0 10px #eb4444;
+box-shadow: 0px 0px 10px #eb4444;
+}
+ img,input,textarea,select{
+max-width: 100%;
+}
+textarea:focus{
+ height: 260px;
+}
+a:hover{
+cursor: crosshair;
+} 
+
+/*Fixed Cons*/
+
+
+.mainhead{
+margin:0 auto; max-width: px; background:#db4f4f; text-align:left;color:#fff; font-weight: bold; padding-top: 2px; top 0; width: 100%; z-index: 1; display: block; height: 32px; padding-bottom: 5px;-webkit-box-shadow: 0 4px 4px -3px black;
+   -moz-box-shadow: 0 4px 4px -3px black;
+        box-shadow: 0 4px 4px -3px black; overflow: hidden; -webkit-backface-visibility: hidden;
+        }
+.sphead{
+height: 36px; z-index: 2; padding-top: 3px;  padding-bottom: 5px;
+}
+
+.button-search img{
+	cursor:pointer;
+	float:right;
+	margin:13px;
+	width:24px;
+	}
+.textbox{
+	border:0px;
+	width:79%;
+	height:30px;
+	border:1px solid #bd4242;
+	}
+.search-box{
+	display:none;
+	overflow:hidden;
+	height:35px;
+	background-color:#FFFFFF;
+	padding:3px;
+	margin:3px;
+	}
+.button-search-box{
+	height:34px;
+	width:18%;
+	color:#FFFFFF;
+	float:right;
+	padding:3px;
+	background-color:#d1a1a1;
+	border:0px;
+	}
+.search { 
+	padding: 3px 5px 3px 23px;
+	margin: 3px; 
+	background: url('http://soundsip.com/css/ws_search.png') no-repeat 5px 3px; }
+	.rounded {  
+	border-radius: 10px; 
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px;
+	}
+span.lighter input[type=text]{
+	border:1px solid #e06262;
+	margin : 2px;
+font-family : Verdana, arial;
+font-size : inherit;
+background-color : #ffc7c7;
+color: #de3838;
+}
+
+
+/*Extra Values*/
+.preview-flex {
+	display: flex;  
+	flex-flow: row wrap;  
+	width: 100%; 
+	justify-content: center;
+ } 
+.preview-ch { 
+	margin: 1px 1px; 
+	flex-basis: calc(50%-2px;);
+ }
+ .preview-ch img{
+ 	max-width: 320px;
+ }
+ 
+.imgscale{text-align:center; padding: 2px;}
+.imgscale img {border: 1px dotted ##ff6a6a;}
+.updateR{border-radius: 4px 4px 4px 4px;
+-moz-border-radius: 4px 4px 4px 4px;
+-webkit-border-radius: 4px 4px 4px 4px;
+border: 1px solid #cecace; color: #520a0a; padding: 3px; margin-left: 1px; margin-right: 1px; margin-top: 1px; margin-bottom: 2px;  background: #ededed;}
+
+.linkfrog{border-radius: 4px 4px 4px 4px;
+-moz-border-radius: 4px 4px 4px 4px;
+-webkit-border-radius: 4px 4px 4px 4px;
+border: 1px solid #ad1010; color: #520a0a; font-weight: bold; padding: 3px; margin-top: 3px; text-align: center; margin-left: 3px; margin-right: 3px;}
+.linka{-webkit-box-shadow: -1px 3px 5px 0px rgba(189,87,92,1);
+-moz-box-shadow: -1px 3px 5px 0px rgba(189,87,92,1);
+box-shadow: -1px 3px 5px 0px rgba(189,87,92,1););
+background:url(http://soundsip.com/css/ws_linka.jpg) repeat; border-radius: 4px 4px 4px 4px;
+-moz-border-radius: 4px 4px 4px 4px;
+-webkit-border-radius: 4px 4px 4px 4px;
+font-weight: ; color: #000000; padding: 5px; margin-top: 8px; margin-bottom: 8px; margin-left: 3px; margin-right: 3px;
+}
+
+
+.footReq{margin-top: 8px; margin-left: 2px; margin-right: 2px;
+ color: #fff;text-align: center;  padding: 3px; 
+-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;background:rgba(0,10,0,0.8);
+-webkit-box-shadow: #B3B3B3 5px 5px 5px;-moz-box-shadow: #B3B3B3 5px 5px 5px; box-shadow: #B3B3B3 5px 5px 5px; 
+} 
+
+.footReq a:link, .footReq a:hover, .footReq a:visited {color: #ffffff;}
+
+.dlmp {padding:3px; }
+.dlmp2 {padding:3px; background-color: #F4F4F4;}
+.dlmp3 {padding: 6px; font-weight: bold;  text-align: center;}
+.dlmp3 a:hover,active{
+border-radius: 6px;-webkit-border-radius: 6px; -moz-border-radius: 6px;
+}
+/*Global CSS Values*/
+
+ul {
+	list-style: none;
+}
+
+table {
+  table-layout: fixed;
+  /*max-width: 499px;  Important */
+}
+td.tblimg {
+  width: 53px;
+}
+
+hr {border-bottom: solid 1px #edffff; border-top: none;border-left: none;border-right: none;}
+
+a.active{
+	z-index:2;color:#fff;cursor:default;background-color:grey;border-color:#428bca
+	}
+
+#page{
+padding: 1px 1px 1px 1px; display: outline;background: #fad2d2; color: #db4f4f; border: 1px solid #fa5a5a; border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px;font-size: 15px; text-decoration: none; margin: 2px;}
+#page:hover{background-color:rgb(230,69,69);color:rgb(255,255,255);text-decoration:none;text-shadow:0px 0px 6px rgb(230,69,69);transition:all linear 0.4s;-moz-transition:all linear 0.4s;-webkit-transition:all linear 0.4s;-o-transition:all linear 0.4s;}
+.kk{
+padding: 2px; margin-top: 5px;
+}
+.txinfo{
+font-size:80%;background:#f8edf1;padding:2px;text-align:center;
+}
+.fullrep{
+-webkit-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #a6a6a6;
+    -webkit-box-shadow: 0 0 2px rgba(30,92,153,0.40);
+    box-shadow: 0px 1px 3px 0px #888888;
+    margin: 1px auto 2px auto;
+    padding: 2px;
+    }
+.frby{
+background:#f8edf1; color:#555;
+}
+.frby a{
+color:#a00; font-weight:bold;
+}
+.mpdate{
+background-position:0 0;
+padding:1px;
+background-color: #F4F4F4;
+text-align:center;
+}
+ .fttl {
+background: #e64545  top repeat-x;
+text-align: ;
+padding: 3px 0px 5px 0px;
+font-size: 12px;
+border-bottom: 4px #fad2d2 solid;
+color: #fff;
+}
+ .fttl a{
+ color: #fff;
+ }
+.tx{
+   font-size: 20px; font-weight: bold; 
+} 
+.tx img{position: relative; height: 19px; bottom: 1px;}
+.tx a{
+  margin-left: 5px;
+}
+ .fbody{
+background: #f6f5f5 ;
+padding: 4px;
+margin: 3px 3px 3px 6px;
+border-left: 3px solid #d4d4d4;
+} 
+.wcode{
+background-color: #fff8dc ; color: #000 ; border-left-width: 1px; border-left-color: #ffcccc; border-left-style: solid; border-bottom-width: 1px; border-bottom-color: #ffcccc; border-bottom-style: solid;
+}
+.quote{
+background-color: #e7e7e7 ; color: red ; padding: 2px;
+}
+.bluepcp:nth-of-type(odd) {border-bottom: 0px;}
+.bluepcp:nth-of-type(even) {padding:3px; border-bottom:0px dashed #9e4f4f; background-color: #F4F4F4; }
+.bluepcp{border: 1px solid #cecace; 
+	-webkit-border-radius: 9px; 
+ margin-bottom: 1px;}
+.bluepcp a{ display:inline; padding:8px !important; }
+.button{
+padding: 5px 15px; text-decoration: none;
+background: #e64545; color: #fff !important;
+font-weight: bold; font-size: small;
+border-radius: 2PX; margin: 0 4PX;
+}
+h1 {
+ font-size: inherit;
+}
+h1.xh1, h2.xh2{
+	text-shadow: 2px 2px 2px rgba(212, 168, 168, 0.75);
+	color: #bf3d3d;
+	font-size: 25px !important;
+}
+input.jumpbox{width: 40px;}
+/*Exit; End of Stupidity;*/
+  
