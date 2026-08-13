@@ -7,8 +7,8 @@ body { margin: 0; font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSyste
 .right { float: right !important; }
 .color { color: #6d28d9; }
 .titulo { background: linear-gradient(135deg, #5b21b6, #7c3aed, #a855f7); color: #fff; padding: 11px 13px; font-size: 14px; font-weight: 700; border-radius: 8px 8px 0 0; margin: 0 0 10px; border: 1px solid #6d28d9; border-bottom: none; }
-.imojis table { width: 100% !important; border-collapse: collapse; overflow-x: auto; }
-.imojis td { border-bottom: 1px solid #eee8f7; text-align: center; padding: 10px 2px; width: 25% !important; }
+.imojis table { width: 100%; max-width: 100% !important; border-collapse: collapse; overflow-x: auto; }
+.imojis td { border-bottom: 1px solid #eee8f7; text-align: center; padding: 6px 2px; width: 24.5% !important; }
 .imojis td b { color: #514966; font-size: 10px; font-weight: 500; }
 .imojis img { width: auto; height: 30px; }
 .panel a span { background: #f1ebff; display: inline-block; width: 20px; height: 20px; border-radius: 50%; text-align: center; padding: 3px 0; margin-left: 12px; font-size: 13px; color: #6d28d9; }
