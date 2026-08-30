@@ -15,6 +15,13 @@ p { padding: 6px 0; line-height: 1.6; }
 li { padding: 3px; }
 hr { width: 100%; height: 1px; color: #dbe3ec; background: #dbe3ec; border: 0; margin: 8px 0; }
 
+/* Utilities */
+.center { text-align: center; }
+.clear { clear: both; }
+.container { width: 100%; max-width: 1000px; margin: 0 auto; padding: 0 4px; }
+.card { background: #fff; border: 1px solid #d1dee8; margin: 4px 3px; padding: 8px; border-radius: 6px; box-shadow: 0 2px 8px rgba(15,23,42,.05); }
+.card:hover { border-color: #8bbbd0; box-shadow: 0 3px 10px rgba(0,102,153,.08); }
+
 /* Headings */
 h1 { background: #fff; color: #172033; border: 1px solid #e2e8f0; border-left: 4px solid #006699; font-size: 115%; padding: 8px 10px; margin: 4px 0; border-radius: 6px; box-shadow: 0 2px 8px rgba(15,23,42,.04); }
 h2 { color: #006699; background: linear-gradient(135deg,#eef7fc,#e1edf6); border: 1px solid #c8d9e7; font-size: 110%; padding: 8px 10px; margin: 4px 0; border-radius: 6px; }
@@ -123,7 +130,6 @@ u { text-decoration: none; font-weight: 700; background: #b80000; color: #fff; p
 m { text-decoration: none; font-weight: 700; background: #008000; color: #fff; padding: 3px 9px; font-size: 11px; border-radius: 40px; }
 s { text-decoration: none; font-weight: 700; background: #777; color: #fff; padding: 3px 9px; font-size: 11px; border-radius: 40px; }
 r span { background: #f8fafc; border: 1px solid #cbdce8; padding: 3px; color: #006699; border-radius: 3px; }
-.clear { clear: both; }
 
 /* Forms */
 .form_error { color: #f00; }
@@ -168,7 +174,8 @@ body::after { content: "Developed By Nayeem Hossain"; white-space: pre; text-ali
     .menu { padding: 6px 4px; }
     .wap a { width: 32px; height: 32px; margin: 0 2px; font-size: 15px; }
     .footer { padding: 9px 4px 5px; }
-    input[type="search"] { width: 65%; }
+    .container { padding: 0 2px; }
+    .card { margin: 3px 2px; padding: 7px; }
 }
 
 @media (min-width: 481px) {
